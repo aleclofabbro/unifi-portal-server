@@ -9,7 +9,7 @@ export interface Config {
 }
 const LOGINS_COLLECTION = `logins`
 export const createDBClient = async (config: Config) => {
-  const client = await connect(`mongodb://${config.dbHost}:${config.dbPort}/${config.dbName}`)
+  const client = await connect(`mongodb://${config.dbHost}:${config.dbPort}/${config.dbName}`, { useNewUrlParser: true })
   const db = client.db()
   const loginsColl = db.collection(LOGINS_COLLECTION)
   config.emitter.on('newLogin', _ => loginsColl.insert(_))
