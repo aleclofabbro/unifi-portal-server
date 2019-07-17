@@ -1,0 +1,28 @@
+{
+  "name": "heroku_fst_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.0",
+    "@types/mongodb": "^3.1.28",
+    "@types/node": "^12.6.3",
+    "@types/tough-cookie": "^2.3.5",
+    "axios": "^0.19.0",
+    "axios-cookiejar-support": "^0.5.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7",
+    "strict-event-emitter-types": "^2.0.0",
+    "tough-cookie": "^3.0.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}
